@@ -4,16 +4,22 @@
 """
 
 
-def power_numbers():
+def power_numbers(nums):
     """
     функция, которая принимает N целых чисел,
     и возвращает список квадратов этих чисел
     >>> power_numbers(1, 2, 5, 7)
     <<< [1, 4, 25, 49]
     """
+    return nums ** 2
+
+#uncomment for cross-check
+#nums = (1, 2, 3, 4, 5)
+#print(list(map(power_numbers, nums)))
 
 
-# filter types
+
+#filter types
 ODD = "odd"
 EVEN = "even"
 PRIME = "prime"
