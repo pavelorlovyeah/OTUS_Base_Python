@@ -25,7 +25,7 @@ EVEN = "even"
 PRIME = "prime"
 
 
-def filter_numbers():
+def filter_numbers(*nums, nums_type):
     """
     функция, которая на вход принимает список из целых чисел,
     и возвращает только чётные/нечётные/простые числа
@@ -36,3 +36,19 @@ def filter_numbers():
     >>> filter_numbers([2, 3, 4, 5], EVEN)
     <<< [2, 4]
     """
+    if nums_type == "ODD":
+        return nums % 2 != 0
+    if nums_type == "EVEN":
+        return nums % 2 == 0
+    if nums_type == "PRIME":
+        if nums > 1:
+           for num in range(2, round(nums ** 0.5) + 1):
+            if nums % num == 0:
+                return()
+           return nums
+
+nums = ((1,2,3,4,5,6,7,8,9,10), "ODD")
+
+
+list(filter(filter_numbers, nums))
+
