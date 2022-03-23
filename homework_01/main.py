@@ -11,7 +11,7 @@ def power_numbers(nums):
     >>> power_numbers(1, 2, 5, 7)
     <<< [1, 4, 25, 49]
     """
-    return list(nums ** 2)
+    return nums ** 2
 
 
 # Text below just for function testing check
@@ -33,12 +33,12 @@ def is_prime(numbers):
 
 
 def is_odd(numbers):
-    if numbers % 2 == 0:
+    if numbers % 2 != 0:
         return numbers
 
 
 def is_even(numbers):
-    if numbers % 2 != 0:
+    if numbers % 2 == 0:
         return numbers
 
 # Text below just for function testing check
