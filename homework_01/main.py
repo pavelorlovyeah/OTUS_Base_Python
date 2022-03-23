@@ -11,12 +11,12 @@ def power_numbers(nums):
     >>> power_numbers(1, 2, 5, 7)
     <<< [1, 4, 25, 49]
     """
-    return nums ** 2
+    return list(nums ** 2)
+
 
 # Text below just for function testing check
 # nums = (1, 2, 3, 4, 5)
-# print(list(map(power_numbers, nums)))
-
+#print(list(map(power_numbers, nums)))
 
 
 #filter types
