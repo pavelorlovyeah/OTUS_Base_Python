@@ -23,22 +23,22 @@ ODD = "odd"
 EVEN = "even"
 PRIME = "prime"
 
-def is_prime(numbers):
-        if numbers > 1:
-            for num in range(2, round(numbers ** 0.5) + 1):
-                if numbers % num == 0:
-                    return()
-            return numbers
+def is_prime(number):
+        if number > 1:
+            for num in range(2, round(number ** 0.5) + 1):
+                if number % num == 0:
+                    return False
+            return True
 
 
-def is_odd(numbers):
-    if numbers % 2 != 0:
-        return numbers
+def is_odd(number):
+    if number % 2 != 0:
+        return True
 
 
-def is_even(numbers):
-    if numbers % 2 == 0:
-        return numbers
+def is_even(number):
+    if number % 2 == 0:
+        return True
 
 # Text below just for function testing check
 # numbers = (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12)
